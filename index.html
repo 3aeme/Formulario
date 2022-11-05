@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form action= "procesar-incidencia.php" method="post">
+        <fieldset>
+            <legend>Datos de la Incidencia</legend>
+
+    <div >
+        <label for="usuario">Usuario:</label> <br>
+        <input type="text" name = "Usuario" placeholder="Ingresa tu usuario"> 
+        <br>
+        <br>
+        <label for="departamento">Departamento:</label> <br>
+        <select name="departamento">
+            <option value="Informátíca">Informática</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Ventas">Ventas</option>
+        </select>
+        <br>
+        <br>
+        <label for="descripcion">Descripción:</label> <br>
+        <textarea name="Descripción" cols="30" rows="10" placeholder="Ingrese la descripción de la incidencia..."></textarea>
+        <br>
+        <br>
+        <label for="contraseña">Contraseña:</label> <br>
+        <input type="password" placeholder="Ingresa tu contraseña">
+    </div>
+</fieldset>
+    <br>
+    <fieldset>
+        <legend>Botones de Reset y Envio</legend>
+    <div>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Reset">
+    </div>
+</fieldset>
+    </form>
+</body>
+</html>
